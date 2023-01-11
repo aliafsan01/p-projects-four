@@ -1,0 +1,532 @@
+
+/* Mobile Screen Design First */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    max-width: 98%;
+    margin: auto;
+}
+
+[class*='col-']{
+   float: left;
+}
+
+[class*='col-']{
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+    padding: 5px;
+}
+.row::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+/* <!-- Header Start From Here --> */
+.header{
+    text-align: center;
+    background-color: rgb(0, 144, 144);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.header-logo{
+    width:100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.header-logo img{
+    width:80px;
+    height:80px;
+    border:5px solid white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.header-logo img:hover{
+    border:8px solid rgb(119, 93, 93);
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding: 20px 0;
+    width:100%;
+    background-color: rgb(0, 108, 141);
+    margin: 10px auto;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+nav ul li a:hover{
+    background-color: rgb(31, 121, 206);
+}
+/* Header End Here */
+
+/* Main Start From Here */
+/* Offer Section Start Here  */
+#offers{
+    padding-top: 0;
+}
+
+.offer-sec{
+    background-image: url(./images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width: 102%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offer-sec h1{
+    background-color: yellow;
+    padding: 12px;
+    font-size: 3rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    margin: 70px 10px auto ;
+}
+
+.offer-sec p{
+    background-color: rgb(5, 124, 1);
+    padding: 10px ;
+    color: white;
+    font-size: 1.5rem;
+    width:70%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px ;
+}
+
+.btn{
+    background-color: rgb(5, 124, 1);
+    padding: 10px 15px;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border:none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px ;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: rgb(26, 155, 22);
+    text-decoration: underline;
+}
+/*  Offer Section End Here */
+
+
+/* About Section Start Here */
+.about-me{
+    text-align: center;
+    padding: 10px;
+}
+
+.about-me h2{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.about-me p{
+    text-align: center;
+    margin-bottom: 35px;
+}
+/*About Section End Here */
+
+
+/* Food Menu Section Start Here */
+.menuCnt{
+    padding:5px 5px 0px 5px;
+    width: 99%;
+    margin:0 auto;
+}
+
+.card{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px 1px black;
+    transition: transform .4s;
+}
+
+.card:hover{
+    transform:scale(1.1)
+}
+
+.cardImg{
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 0;
+}
+
+.cardImg img{
+    width: 100% ;
+    margin-bottom: 0;
+}
+
+.cardDesc{
+    width: 100%;
+    background-color: rgb(200, 197, 197);
+    margin-top: 0;
+    padding: auto 10px;
+    transform: .3s;
+}
+
+.cardDesc h3{
+    background-color: rgb(0, 134, 7);
+    padding:10px;
+    font-size: 1.5rem;   
+    color:white;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.cardDesc h3:hover{
+    background-color: rgb(7, 149, 14);
+    color:white;
+    border-radius: 15px;
+}
+
+.cardDesc p{
+    padding: 15px;
+    margin: 5px auto;
+    background-color: rgb(200, 197, 197);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.cardDesc p:hover{
+    margin: 5px auto;
+    background-color: rgb(177, 172, 172);
+    border-radius: 15px;
+
+}
+/* Food Menu Section End Here */
+
+
+/* Contact Section Start Here*/
+.contactOp{
+    background-color: rgb(97, 40, 202);
+    text-align: center;
+    color:white;
+    margin-top: 0;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.mapCon{
+    width: 100%;
+    padding: 20px;
+}
+
+.mapCon iframe{
+    width: 100%;
+    height: 300px;
+}
+
+.contInfo{
+    padding: 20px ;
+}
+
+.contInfo h3{
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 5px;
+}
+
+.location{
+    margin: 15px auto;
+    font-size: 120%;
+}
+
+.phone{
+    margin: 15px auto;
+    font-size: 120%;
+}
+
+.opening{
+    font-size: 120%;
+    margin: 10px auto;
+}
+/* Contact Section End Here */ 
+/* Main End Here */
+
+
+/* Footer Start Here  */
+.footer{
+    background-color:rgb(2, 2, 10);
+    width: 98%;
+    margin: 0 auto;
+}
+
+.copyRightsite p{
+    padding:20px;
+    color:white;
+    text-align:center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.socialLink {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.socialLink button{
+    border:none;
+    outline:none;
+    /* background-color: transparent; */
+    border-radius: 50%;
+    text-align: center;
+    border:1px solid white;
+    padding:0;
+    margin: 8px;
+    transition: .3s;
+}
+
+.socialLink button:hover{
+    border:1px solid rgb(6, 179, 64);
+    background-color: gray;
+}
+
+.socialLink button img{
+    color: white;
+    width:50px;
+}
+/* Footer End Here  */
+
+/* Mobile Screen Design First End */
+
+
+
+
+
+
+
+/* For Desctop Screen Design */
+
+@media screen and (min-width:700px) {
+    
+/* Grid Style Of col- */
+
+.col-1{width:8.33%}
+.col-2{width:16.66%}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.66%}
+.col-6{width:50%}
+.col-7{width:58.33%}
+.col-8{width:66.66%}
+.col-9{width:75%}
+.col-10{width:83.33%}
+.col-11{width:91.66%}
+.col-12{width:100%}
+
+
+/* Header Start From Here */
+.header{
+    background-color: rgb(0, 144, 144);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.header-logo{   
+    display: block;
+    margin: auto;
+    text-align: left;
+}
+
+.header-logo img{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.header-logo img:hover{
+    border:8px solid rgb(148, 93, 93);
+}
+
+nav{
+    text-align: right;
+    margin-top: 15px;
+}
+
+nav ul li{
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+    width: 130px;
+}
+
+nav ul li a{
+    text-align: center;
+    padding: 20px 0;
+    background-color: transparent;
+    margin: 0px auto;
+}
+/* Header End Here */
+
+ 
+/* Main Start From Here */
+/* Offer Section Start Here */
+#offers{
+    padding-top: 0;
+}
+
+.offer-sec h1{
+    background-color: yellow;
+    padding: 12px;
+    font-size: 3rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    border-radius: 10px;
+    width: 600px;
+    margin: auto;
+    transition: transform .4s;
+    margin-top: 70px ;
+}
+
+.offer-sec p{
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    margin-top: 40px ;
+    background-color: red;
+    transition: transform .4s;
+}
+
+.btn{
+    background-color: rgb(5, 124, 1);
+    padding: 15px 20px;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 40px ;
+    transition: transform .4s;
+}
+
+.btn:hover{
+    background-color: rgb(3, 80, 0);
+    text-decoration: underline;
+    border-bottom: 2px solid yellowgreen;
+}
+
+.offer-sec h1:hover{
+    transform:scale(1.1);
+    box-shadow: 0 0 5px 1px black;
+}
+
+.offer-sec p:hover{
+    transform:scale(1.1);
+    box-shadow: 0 0 5px 1px black;
+}
+/* Offer Section End Here */
+
+
+/*  About Section Start Here*/
+.about-me{
+    padding: 20px;
+    transition: .4s;
+}
+
+.about-me h2{
+    transition: font-size .4s,transform .4s;
+}
+
+.about-me p{
+    transition:font-size .4s,transform .4s;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 29px;
+}
+
+.about-me h2:hover{
+    transform: scale(1.1);
+    font-size: 2.5rem;
+}
+
+.about-me p:hover{
+    transform: scale(1.1);
+    font-size: 1.3rem;
+}
+/* About Section End Here*/
+
+
+/* Food Menu Section Start Here */
+.card{
+    transition: transform .4s;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 10px 2px black;
+    transform:scale(1.1)
+}
+/* Food Menu Section End Here */
+
+
+/* Contact Secttion start*/
+.contcnt{
+    margin-top: 30px;
+ }
+/* Contact section end */ 
+/* Main End Here */
+
+
+/* Footer Start Here*/
+.footer{
+    background-color:rgb(2, 2, 10);
+    width: 98%;
+    margin: 0 auto;
+}
+
+.copyRightsite p{
+    font-size:1.2rem;
+}
+
+.socialLink button{
+    margin: 10px 10px 0 10px;
+}
+
+.socialLink button img{
+    color: white;
+    width:55px;
+}
+
+/*Footer End Here */
+}
+/* For Desctop Screen Design End*/
+
